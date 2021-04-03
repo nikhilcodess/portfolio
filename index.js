@@ -51,3 +51,11 @@ function scrollHeader() {
   else header.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
+
+// show scroll top
+function scrollTop() {
+  const header = document.getElementById("scroll-top");
+  if (this.scrollY >= 560) scrollTop.classList.add("show-scroll");
+  else header.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollTop);
